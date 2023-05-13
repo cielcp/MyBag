@@ -1,0 +1,84 @@
+* {
+	margin:  0px;
+	padding:  0px;
+	box-sizing: border-box;
+}
+
+/* adjusting fonts */
+
+@font-face {
+	font-family: "ft88";
+	src: url("FT88-Regular.woff") format("normal"),
+		 url("FT88-Regular.woff2") format("normal");
+  }
+
+.cursive {
+    font-family: cursive;
+}
+
+body {
+	font-family: 'ft88', "Helvetica Neue", Helvetica, sans-serif;
+	color: rgb(28, 122, 87);
+	transition: background 500ms ease;
+}
+
+p, li {
+	font-size:  22px;
+	line-height: 30px;
+}
+
+/* adjusting spacing */
+
+#left-column {
+	padding: 20px;
+}
+
+h1, p {
+	margin-bottom:  20px;
+}
+
+h3 {
+	margin-top:  20px;
+}
+
+ul, ol {
+	margin-left: 20px;
+}
+
+img {
+	max-width: 100%;
+	height:  auto;
+}
+
+a, a:visited {
+	transition: all 500ms ease;
+	color: rgb(74, 124, 165);
+  }
+  
+  a:hover {
+	color: rgb(255, 255, 255);  
+  }
+
+/* uncomment the code below to set the grid */
+
+/*#grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+body {
+	overflow: hidden;
+}
+
+.scroll {
+	padding:  20px;
+	overflow: scroll;
+	height: 100vh;
+}
+
+#left-column {
+}
+
+#right-column {
+	background: #333;
+}*/
