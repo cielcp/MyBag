@@ -4,37 +4,77 @@
 	box-sizing: border-box;
 }
 
-/* adjusting fonts */
-
-@font-face {
-	font-family: "ft88";
-	src: url("FT88-Regular.woff") format("normal"),
-		 url("FT88-Regular.woff2") format("normal");
-  }
-
-.cursive {
-    font-family: cursive;
-}
-
 body {
-	font-family: 'ft88', "Helvetica Neue", Helvetica, sans-serif;
-	color: rgb(28, 122, 87);
+	font-family: monospace, serif, Helvetica, sans-serif;
+	color: rgb(255, 255, 255);
 	transition: background 500ms ease;
 }
 
-p, li {
-	font-size:  22px;
+p, li, figcaption {
+	font-size:  20px;
 	line-height: 30px;
+}
+
+header {
+	padding-top: 40px;
+}
+
+footer {
+	padding-top: 20px;
+	padding-bottom:60px
 }
 
 /* adjusting spacing */
 
-#left-column {
-	padding: 20px;
+#center {
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
 }
 
-h1, p {
+#row {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#box {
+	margin:30px;
+	width:250px;
+	height:250px;
+}
+
+#box figcaption {
+	opacity: 0;
+}
+
+#box:hover {
+	border-style: inset;
+}
+
+#box:hover figcaption {
+	opacity: 100;
+}
+
+#box:hover img {
+	opacity:0;
+}
+
+#ornament {
+	padding-left: 10px;
+	padding-right:10px;
+}
+
+h1 {
 	margin-bottom:  20px;
+}
+
+figcaption {
+	height:10px;
+	position:relative;
+	top:-250px;
 }
 
 h3 {
